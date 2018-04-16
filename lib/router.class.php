@@ -72,8 +72,7 @@ class Router{
         return $this->language;
     }
 
-    public function __construct($uri)
-    {
+    public function __construct($uri){
         $this->uri = urldecode(trim($uri, '/'));
 
         // Get defaults
