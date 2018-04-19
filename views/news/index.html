@@ -1,0 +1,19 @@
+
+
+<br/>
+
+<!--<?=$data['1']['title']?>-->
+
+<?php
+$newsHtml='';
+if (!empty($data)) {
+$newsHtml .= '<ul>';
+    foreach ($data as $i => $new) {
+    $newsHtml .= '<li><a href="'. $new['link'] .'">' . $new['title']. '   '. $new['datetime']. '</a></li>';
+    }
+    $newsHtml .= '</ul>';
+
+echo $newsHtml;
+}
+?>
+

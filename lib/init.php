@@ -1,6 +1,7 @@
 <?php
 
 function devionityAutoload($class_name)
+
 {
     $lib_path = ROOT.DS.'lib'.DS.strtolower($class_name).'.class.php';
     $controllers_path = ROOT.DS.'controllers'.DS.str_replace('controller', '', strtolower($class_name)).'.controller.php';

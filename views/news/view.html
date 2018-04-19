@@ -1,0 +1,17 @@
+<br/>
+
+
+
+
+<?php
+$newsHtml='';
+if (!empty($data)) {
+$newsHtml .= '<ul>';
+foreach ($data as $i => $new) {
+$newsHtml .= "<h2>".$new['title']."</h2>". '   '. $new['datetime']."<br><p>".$new['description'];
+}
+$newsHtml .= '</ul>';
+
+echo $newsHtml;
+}
+?>
